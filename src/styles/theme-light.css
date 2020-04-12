@@ -1,0 +1,19 @@
+/* Theme Light*/
+.theme-light {
+  --bg-background-primary: #ffffff;
+  --bg-background-secondary: #f2f2f6;
+  --bg-background-tertiary: #e2e8f6;
+}
+.theme-light p {
+  color: #6f6f6f;
+}
+
+.theme-dark h1,
+h2,
+h3,
+h4 {
+  color: #1f2233;
+}
+.theme-light .card {
+  @apply bg-white;
+}

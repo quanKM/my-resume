@@ -24,6 +24,7 @@ module.exports = {
         purgeOnly: ['src/styles/index.css'],
       },
     },
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
