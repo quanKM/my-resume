@@ -7,10 +7,12 @@ const Hero: FC = () => {
     <section className="hero h-screen font-mont" id="hero">
       <div className="w-full h-screen flex align-middle  items-center justify-center">
         <div className="container justify-center flex text-white flex-col items-center">
-          <img
-            className="w-48 h-48 rounded-full object-cover"
-            src={ProfileImage}
-          />
+          <div className="w-48 h-48 rounded-full ">
+            <img
+              className="w-full h-full rounded-full object-cover"
+              src={ProfileImage}
+            />
+          </div>
           <h1 className="text-4xl lg:text-6xl text-blue-500 font-extrabold">
             Khong Minh Quan
           </h1>

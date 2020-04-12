@@ -11,51 +11,67 @@ import SvgJquery from '../../Svg/SvgJquery'
 import SvgRedux from '../../Svg/SvgRedux'
 import SvgReduxSaga from '../../Svg/SvgReduxSaga'
 import SvgNuxtJs from '../../Svg/SvgNuxtJs'
-
+import SvgNodejs from '../../Svg/SvgNodejs'
+import './index.scss'
 const Skill: FC = () => {
   return (
     <section className="bg-secondary skill" id="skill">
-      <div className="container mx-auto py-32">
+      <div className="container mx-auto py-24">
         <h3 className="text-blue-500 ">My awesome Skills</h3>
         <h2 className="border-b-4 border-blue-500 w-64">My skills</h2>
+        <div className="grid grid-cols-8 gap-4 mt-4 p-4">
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgLaravel className="w-24 h-24"></SvgLaravel>
+            <p className="mt-2">Laravel</p>
+          </div>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgNodejs className="w-24 h-24"></SvgNodejs>
+            <p className="mt-2">NodeJs</p>
+          </div>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgJavascript className="w-24 h-24"></SvgJavascript>
+            <p className="mt-2">Javascript</p>
+          </div>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgTypescript className="w-24 h-24"></SvgTypescript>
+            <p className="mt-2">Typescript</p>
+          </div>
 
-        <div className="grid grid-cols-8 gap-4 mt-2">
-          <div className="card text-center">
-            <SvgLaravel></SvgLaravel>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgReact className="w-24 h-24"> </SvgReact>
+            <p className="mt-2">React</p>
           </div>
-          <div className="card text-center">
-            <SvgJavascript></SvgJavascript>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgVue className="w-24 h-24"></SvgVue>
+            <p className="mt-2">Vue</p>
           </div>
-          <div className="card text-center">
-            <SvgTypescript></SvgTypescript>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgHtml className="w-24 h-24"></SvgHtml>
+            <p className="mt-2">HTML</p>
           </div>
-
-          <div className="card text-center">
-            <SvgReact></SvgReact>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgBoostrap className="w-24 h-24"></SvgBoostrap>
+            <p className="mt-2">Boostrap</p>
           </div>
-          <div className="card text-center">
-            <SvgVue></SvgVue>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgJquery className="w-24 h-24"></SvgJquery>
+            <p className="mt-2">Jquery</p>
           </div>
-          <div className="card text-center">
-            <SvgHtml></SvgHtml>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgNextJs className="w-24 h-24"> </SvgNextJs>
+            <p className="mt-2">NextJs</p>
           </div>
-          <div className="card text-center">
-            <SvgBoostrap></SvgBoostrap>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgRedux className="w-24 h-24"></SvgRedux>
+            <p className="mt-2">Redux</p>
           </div>
-          <div className="card text-center">
-            <SvgJquery></SvgJquery>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgReduxSaga className="w-24 h-24"></SvgReduxSaga>
+            <p className="mt-2">Redux Saga</p>
           </div>
-          <div className="card text-center">
-            <SvgNextJs></SvgNextJs>
-          </div>
-          <div className="card text-center">
-            <SvgRedux></SvgRedux>
-          </div>
-          <div className="card text-center">
-            <SvgReduxSaga></SvgReduxSaga>
-          </div>
-          <div className="card text-center">
-            <SvgNuxtJs></SvgNuxtJs>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgNuxtJs className="w-24 h-24"></SvgNuxtJs>
+            <p className="mt-2">NuxtJs</p>
           </div>
         </div>
       </div>
