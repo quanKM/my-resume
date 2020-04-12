@@ -1,0 +1,51 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+h2,
+h3 {
+  @apply font-semibold tracking-wider;
+}
+
+h2 {
+  @apply text-5xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+.card {
+  @apply shadow-xl rounded;
+}
+/* Theme Light*/
+.theme-light {
+  --bg-background-primary: #ffffff;
+  --bg-background-secondary: #f2f2f6;
+  --bg-background-tertiary: #e2e8f6;
+}
+.theme-light p {
+  color: #6f6f6f;
+}
+.theme-light h2 {
+  color: #1f2233;
+}
+
+.theme-light .card {
+  @apply bg-white;
+}
+
+/* Theme Dark*/
+.theme-dark {
+  --bg-background-primary: #202233;
+  --bg-background-secondary: #23283d;
+  --bg-background-tertiary: #e2e8f6;
+}
+
+.theme-dark p {
+  color: #d8d7d6;
+}
+.theme-dark h2 {
+  color: #fbf4e0;
+}
