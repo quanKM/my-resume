@@ -12,14 +12,18 @@ type Props = {
 
 const ChangeThemeButton: FC<Props> = ({ theme, setTheme, className }) => {
   return (
-    <Toggle
-      defaultChecked={theme === Theme.DARK}
-      icons={{
-        checked: <SvgSun className="w-4 h-4 pb-1"></SvgSun>,
-        unchecked: <SvgNight className="w-4 h-4 pb-1"></SvgNight>,
-      }}
-      onChange={() => setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK)}
-    />
+    <div className={className}>
+      <Toggle
+        defaultChecked={theme === Theme.DARK}
+        icons={{
+          checked: <SvgSun className="w-4 h-4 pb-1"></SvgSun>,
+          unchecked: <SvgNight className="w-4 h-4 pb-1"></SvgNight>,
+        }}
+        onChange={() =>
+          setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK)
+        }
+      />
+    </div>
   )
 }
 

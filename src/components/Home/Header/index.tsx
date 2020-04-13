@@ -10,6 +10,7 @@ type Props = {
   setTheme: Function
   theme: string
 }
+
 const Header: FC<Props> = ({ theme, setTheme }) => {
   const [showMobileHeader, setShowMobileHeader] = useState(false)
 
@@ -161,10 +162,11 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                 >
                   Resume
                 </Link>
+
                 <ChangeThemeButton
                   theme={theme}
                   setTheme={setTheme}
-                  className="text-gray-800 text-sm font-semibold  mr-4  py-2"
+                  className="mr-4 pt-4"
                 />
               </div>
             </div>

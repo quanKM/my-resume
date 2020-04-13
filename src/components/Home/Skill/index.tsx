@@ -12,8 +12,11 @@ import SvgRedux from '../../Svg/SvgRedux'
 import SvgReduxSaga from '../../Svg/SvgReduxSaga'
 import SvgNuxtJs from '../../Svg/SvgNuxtJs'
 import SvgNodejs from '../../Svg/SvgNodejs'
-import './index.scss'
 import { Element } from 'react-scroll'
+import SvgDocker from '../../Svg/SvgDocker'
+import SvgMysql from '../../Svg/SvgMysql'
+import SvgCss from '../../Svg/SvgCss'
+import './index.scss'
 
 const Skill: FC = () => {
   return (
@@ -54,6 +57,10 @@ const Skill: FC = () => {
             <p className="mt-2">HTML</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
+            <SvgCss className="w-24 h-24"></SvgCss>
+            <p className="mt-2">CSS</p>
+          </div>
+          <div className="card flex flex-col items-center justify-center p-2">
             <SvgBoostrap className="w-24 h-24"></SvgBoostrap>
             <p className="mt-2">Boostrap</p>
           </div>
@@ -76,6 +83,14 @@ const Skill: FC = () => {
           <div className="card flex flex-col items-center justify-center p-2">
             <SvgNuxtJs className="w-24 h-24"></SvgNuxtJs>
             <p className="mt-2">NuxtJs</p>
+          </div>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgDocker className="w-24 h-24"></SvgDocker>
+            <p className="mt-2">Docker</p>
+          </div>
+          <div className="card flex flex-col items-center justify-center p-2">
+            <SvgMysql className="w-24 h-24"></SvgMysql>
+            <p className="mt-2">MySql</p>
           </div>
         </div>
       </div>

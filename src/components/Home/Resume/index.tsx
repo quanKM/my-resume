@@ -103,10 +103,7 @@ const Resume: FC = () => {
                 <h3>POSTS AND TELECOMMUNICATIONS INSTITUTE OF TECHNOLOGY</h3>
                 <h4 className="my-1">INFORMATION TECHNOLOGY</h4>
               </div>
-              <p>
-                - Working as a full-stack developer mainly developing the Viblo
-                Platform.
-              </p>
+              <p>- Graduated with Bachelor of Computer Science</p>
             </div>
           </li>
         </ul>
