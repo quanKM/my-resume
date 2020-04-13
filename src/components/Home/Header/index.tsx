@@ -11,13 +11,17 @@ type Props = {
   theme: string
 }
 const Header: FC<Props> = ({ theme, setTheme }) => {
-  const [isTop, setIsTop] = useState(window.pageYOffset <= 100)
   const [showMobileHeader, setShowMobileHeader] = useState(false)
+
+  const [isTop, setIsTop] = useState(
+    typeof window !== 'undefined' ? window.pageYOffset <= 100 : null
+  )
   useEffect(() => {
     document.addEventListener('scroll', () => {
-      setIsTop(window.pageYOffset <= 100)
+      setIsTop(typeof window !== 'undefined' ? window.pageYOffset <= 100 : null)
     })
   }, [])
+
   const scrollToTop = () => {
     setShowMobileHeader(false)
     scroll.scrollToTop()

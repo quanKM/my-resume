@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-
+import { Helmet } from 'react-helmet'
 type Props = {
   description?: string
   meta?: any
@@ -7,7 +7,13 @@ type Props = {
 }
 
 const SEO: FC<Props> = ({ description, meta, title }) => {
-  return <></>
+  return (
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{title}</title>
+      <meta name="description" content="Khong Minh Quan resume" />
+    </Helmet>
+  )
 }
 
 export default SEO

@@ -10,7 +10,7 @@ import Footer from '../components/Home/Footer'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home"></SEO>
+    <SEO title="Khong Minh Quan's Resume"></SEO>
     <Hero />
     <AboutMe />
     <Skill />
