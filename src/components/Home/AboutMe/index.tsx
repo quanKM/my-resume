@@ -15,9 +15,9 @@ const AboutMe = () => {
   return (
     <section className="bg-primary about-me font-mont" id="about-me">
       <div className="container mx-auto py-32">
-        <div>
+        <div className="section-title">
           <h3 className="text-blue-500 ">Discover</h3>
-          <h2 className="border-b-4 border-blue-500 w-64">About me</h2>
+          <h2>About me</h2>
         </div>
         <div className="mt-4 p-4">
           <div className="flex ">

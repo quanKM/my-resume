@@ -4,6 +4,8 @@
 
 @tailwind utilities;
 
+@import '~animate.css';
+
 @import './theme-dark.css';
 
 @import './theme-light.css';
@@ -22,4 +24,18 @@ h3 {
 }
 .card {
   @apply shadow-xl rounded-lg;
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 2px;
+  @apply bg-blue-500 .w-64;
 }

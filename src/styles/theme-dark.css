@@ -10,9 +10,9 @@
 }
 
 .theme-dark h1,
-h2,
-h3,
-h4 {
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4 {
   color: #fbf4e0;
 }
 

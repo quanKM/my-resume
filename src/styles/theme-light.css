@@ -8,10 +8,10 @@
   color: #6f6f6f;
 }
 
-.theme-dark h1,
-h2,
-h3,
-h4 {
+.theme-light h1,
+.theme-light h2,
+.theme-light h3,
+.theme-light h4 {
   color: #1f2233;
 }
 .theme-light .card {

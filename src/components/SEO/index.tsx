@@ -7,7 +7,7 @@ type Props = {
 }
 
 const SEO: FC<Props> = ({ description, meta, title }) => {
-  return <div></div>
+  return <></>
 }
 
 export default SEO

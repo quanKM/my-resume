@@ -13,13 +13,14 @@ import SvgReduxSaga from '../../Svg/SvgReduxSaga'
 import SvgNuxtJs from '../../Svg/SvgNuxtJs'
 import SvgNodejs from '../../Svg/SvgNodejs'
 import './index.scss'
+
 const Skill: FC = () => {
   return (
     <section className="bg-secondary skill font-mont" id="skill">
       <div className="container mx-auto py-24">
-        <div>
+        <div className="section-title">
           <h3 className="text-blue-500 ">My awesome Skills</h3>
-          <h2 className="border-b-4 border-blue-500 w-64">My skills</h2>
+          <h2>My skills</h2>
         </div>
         <div className="grid grid-cols-8 gap-4 mt-4 p-4">
           <div className="card flex flex-col items-center justify-center p-2">
