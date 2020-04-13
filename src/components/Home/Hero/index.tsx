@@ -1,10 +1,11 @@
 import React, { FC } from 'react'
 import ProfileImage from '../../../images/profile.png'
 import './style.scss'
+import { Element } from 'react-scroll'
 
 const Hero: FC = () => {
   return (
-    <section className="hero h-screen font-mont" id="hero">
+    <Element className="hero h-screen font-mont" id="hero" name="hero">
       <div className="w-full h-screen flex align-middle  items-center justify-center">
         <div className="container justify-center flex text-white flex-col items-center">
           <div className="w-48 h-48 rounded-full ">
@@ -21,7 +22,7 @@ const Hero: FC = () => {
           </p>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 

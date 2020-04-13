@@ -4,10 +4,13 @@
   --bg-background-secondary: #f2f2f6;
   --bg-background-tertiary: #e2e8f6;
 }
-.theme-light p {
+.theme-light p,
+.theme-light footer a {
   color: #6f6f6f;
 }
-
+.theme-light footer a:hover {
+  color: black;
+}
 .theme-light h1,
 .theme-light h2,
 .theme-light h3,
@@ -16,4 +19,7 @@
 }
 .theme-light .card {
   @apply bg-white;
+}
+.theme-dark .header {
+  color: #1f2233;
 }

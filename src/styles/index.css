@@ -10,18 +10,24 @@
 
 @import './theme-light.css';
 
+body {
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
 h2,
 h3 {
   @apply font-semibold tracking-wider;
 }
 
 h2 {
-  @apply text-5xl;
+  @apply text-4xl;
 }
 
 h3 {
   @apply text-xl;
 }
+
 .card {
   @apply shadow-xl rounded-lg;
 }
@@ -37,5 +43,5 @@ h3 {
   left: 0;
 
   height: 2px;
-  @apply bg-blue-500 .w-64;
+  @apply bg-blue-500 w-64;
 }

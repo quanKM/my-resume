@@ -1,4 +1,4 @@
-$primary-color: #ff6b6b;
+$primary-color: #4299e1;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 .timeline {
@@ -24,6 +24,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   text-transform: uppercase;
   white-space: nowrap;
 }
+
 .timeline-item {
   padding-left: 40px;
   position: relative;

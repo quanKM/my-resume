@@ -13,16 +13,17 @@ import SvgReduxSaga from '../../Svg/SvgReduxSaga'
 import SvgNuxtJs from '../../Svg/SvgNuxtJs'
 import SvgNodejs from '../../Svg/SvgNodejs'
 import './index.scss'
+import { Element } from 'react-scroll'
 
 const Skill: FC = () => {
   return (
-    <section className="bg-secondary skill font-mont" id="skill">
-      <div className="container mx-auto py-24">
+    <Element className="bg-secondary skill font-mont" id="skill" name="skill">
+      <div className="container mx-auto py-24 px-4 sm:px-0">
         <div className="section-title">
           <h3 className="text-blue-500 ">My awesome Skills</h3>
           <h2>My skills</h2>
         </div>
-        <div className="grid grid-cols-8 gap-4 mt-4 p-4">
+        <div className="grid grid-cols-3  lg:grid-cols-8 gap-4 mt-4 p-4">
           <div className="card flex flex-col items-center justify-center p-2">
             <SvgLaravel className="w-24 h-24"></SvgLaravel>
             <p className="mt-2">Laravel</p>
@@ -78,7 +79,7 @@ const Skill: FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   )
 }
 

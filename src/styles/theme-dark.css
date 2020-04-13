@@ -5,10 +5,13 @@
   --bg-background-tertiary: #e2e8f6;
 }
 
-.theme-dark p {
+.theme-dark p,
+.theme-dark footer a {
   color: #d8d7d6;
 }
-
+.theme-dark footer a:hover {
+  color: #fff;
+}
 .theme-dark h1,
 .theme-dark h2,
 .theme-dark h3,
@@ -18,4 +21,8 @@
 
 .theme-dark .card {
   background-color: #3b425e;
+}
+
+.theme-dark .header {
+  color: #fbf4e0;
 }

@@ -10,6 +10,7 @@ module.exports = {
       primary: 'var(--bg-background-primary)',
       secondary: 'var(--bg-background-secondary)',
       tertiary: 'var(--bg-background-tertiary)',
+      transparent: 'transparent',
       black: '#000',
       white: '#fff',
       gray: {

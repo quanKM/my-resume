@@ -1,5 +1,6 @@
 import React, { FC, useEffect } from 'react'
 import './index.scss'
+import { Element } from 'react-scroll'
 
 const Resume: FC = () => {
   useEffect(() => {
@@ -10,8 +11,8 @@ const Resume: FC = () => {
   }, [])
 
   return (
-    <section className="resume font-mont bg-primary" id="resume">
-      <div className="container mx-auto py-32">
+    <Element className="resume font-mont bg-primary" id="resume" name="resume">
+      <div className="container mx-auto py-32 px-4 sm:px-0">
         <div className="section-title">
           <h3 className="text-blue-500 ">Experience & Education</h3>
           <h2>My resume</h2>
@@ -88,9 +89,29 @@ const Resume: FC = () => {
               </p>
             </div>
           </li>
+          <li
+            className="timeline-item  wow fadeInLeft"
+            data-wow-delay="0.5s"
+            data-wow-offset="50"
+          >
+            <div className="timeline-info">
+              <h4>Aug 2015 - Dec 2019</h4>
+            </div>
+            <div className="timeline-marker"></div>
+            <div className="timeline-content">
+              <div className="timeline-title">
+                <h3>POSTS AND TELECOMMUNICATIONS INSTITUTE OF TECHNOLOGY</h3>
+                <h4 className="my-1">INFORMATION TECHNOLOGY</h4>
+              </div>
+              <p>
+                - Working as a full-stack developer mainly developing the Viblo
+                Platform.
+              </p>
+            </div>
+          </li>
         </ul>
       </div>
-    </section>
+    </Element>
   )
 }
 
