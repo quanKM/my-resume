@@ -29,8 +29,13 @@ const Footer: FC = () => {
         <div>
           <p className="flex mt-2">
             Building with ❤ using &nbsp;
-            <SvgGastby className="w-5 h-5 mt-1 "></SvgGastby>&nbsp; and &nbsp;
-            <SvgNetlify className="w-5 h-5 mt-1 "></SvgNetlify>
+            <a href="https://www.gatsbyjs.org/" rel="noopener noreferrer">
+              <SvgGastby className="w-5 h-5 mt-1 "></SvgGastby>
+            </a>
+            &nbsp; and &nbsp;
+            <a href="https://www.netlify.com/" rel="noopener noreferrer">
+              <SvgNetlify className="w-5 h-5 mt-1 "></SvgNetlify>
+            </a>
           </p>
         </div>
       </div>

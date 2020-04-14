@@ -18,7 +18,7 @@ const Hero: FC = () => {
             Khong Minh Quan
           </h1>
           <p className="text-orange-200 text-lg">
-            A Motivated Full Stack developer
+            A Learner & Full Stack Developer
           </p>
         </div>
       </div>

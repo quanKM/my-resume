@@ -33,16 +33,19 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
         <div
           className={
             (isTop
-              ? ' bg-transparent text-white'
+              ? ' bg-transparent text-orange-200'
               : ` bg-primary animated fadeInDown shadow ${
-                  theme === Theme.LIGHT ? 'text-black' : 'text-white'
+                  theme === Theme.LIGHT ? 'text-black' : 'text-orange-200'
                 }`) + ' z-10'
           }
         >
           <div className="container mx-auto px-4 hidden sm:block">
             <div className="flex py-4">
               <div className="hidden sm:block">
-                <a className="flex  items-center" onClick={scrollToTop}>
+                <a
+                  className="flex items-center cursor-pointer"
+                  onClick={scrollToTop}
+                >
                   <SvgAstronaut className="w-12 h-12"></SvgAstronaut>
                   <span className="ml-2 font-semibold">QuanKM</span>
                 </a>
@@ -52,9 +55,10 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
+                  offset={-50}
                   duration={500}
                   to="hero"
-                  className="text-lg font-semibold mr-6"
+                  className="text-lg font-semibold mr-6 cursor-pointer"
                 >
                   Home
                 </Link>
@@ -62,18 +66,20 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   activeClass="active"
                   spy={true}
                   smooth={true}
+                  offset={-50}
                   to="about-me"
                   duration={500}
-                  className=" text-lg font-semibold mr-6"
+                  className=" text-lg font-semibold mr-6 cursor-pointer"
                 >
                   About
                 </Link>
                 <Link
                   spy={true}
                   smooth={true}
+                  offset={-50}
                   duration={500}
                   to="skill"
-                  className=" text-lg font-semibold mr-6"
+                  className=" text-lg font-semibold mr-6 cursor-pointer"
                 >
                   Skills
                 </Link>
@@ -81,8 +87,9 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  offset={-50}
                   to="resume"
-                  className=" text-lg font-semibold mr-6"
+                  className=" text-lg font-semibold mr-6 cursor-pointer"
                 >
                   Resume
                 </Link>
@@ -97,7 +104,7 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
         </div>
         <div
           className={
-            (theme === Theme.LIGHT ? 'text-black' : 'text-white') +
+            (theme === Theme.LIGHT ? 'text-black' : 'text-orange-200') +
             ' bg-primary z-10'
           }
         >
@@ -131,7 +138,7 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   smooth={true}
                   duration={500}
                   to="hero"
-                  className=" text-lg font-semibold mr-6 border-b-2 py-2"
+                  className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >
                   Home
                 </Link>
@@ -141,7 +148,7 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   smooth={true}
                   to="about-me"
                   duration={500}
-                  className=" text-lg font-semibold mr-6 border-b-2 py-2"
+                  className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >
                   About
                 </Link>
@@ -150,7 +157,7 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   smooth={true}
                   duration={500}
                   to="skill"
-                  className=" text-lg font-semibold mr-6 border-b-2 py-2"
+                  className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >
                   Skills
                 </Link>
@@ -158,7 +165,7 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   spy={true}
                   smooth={true}
                   to="resume"
-                  className=" text-lg font-semibold mr-6 border-b-2 py-2"
+                  className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >
                   Resume
                 </Link>
