@@ -44,11 +44,11 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     border-radius: 100%;
     content: '';
     display: block;
-    height: 15px;
+    height: 13px;
     position: absolute;
     top: 4px;
-    left: 0;
-    width: 15px;
+    left: -1px;
+    width: 13px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   }
   &:after {

@@ -26,7 +26,7 @@ const Skill: FC = () => {
           <h3 className="text-blue-500 ">My awesome Skills</h3>
           <h2>My skills</h2>
         </div>
-        <div className="grid grid-cols-3  lg:grid-cols-8 gap-4 mt-4 p-4">
+        <div className="grid grid-cols-3 lg:grid-cols-8 gap-4 mt-4 p-4">
           <div className="card flex flex-col items-center justify-center p-2">
             <SvgLaravel className="w-24 h-24"></SvgLaravel>
             <p className="mt-2">Laravel</p>
