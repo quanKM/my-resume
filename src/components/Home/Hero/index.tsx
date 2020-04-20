@@ -11,6 +11,7 @@ const Hero: FC = () => {
           <div className="w-48 h-48 rounded-full ">
             <img
               className="w-full h-full rounded-full object-cover"
+              alt="Profile picture"
               src={ProfileImage}
             />
           </div>

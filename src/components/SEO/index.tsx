@@ -10,8 +10,18 @@ const SEO: FC<Props> = ({ description, meta, title }) => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
-      <title>{title}</title>
-      <meta name="description" content="Khong Minh Quan resume" />
+      <title>{title || 'Home'}</title>
+      <meta property="og:type" content="article" />
+      <html lang="en" />
+      <meta
+        name="description"
+        content={description || "Khong Minh Quan's personal resume"}
+      />
+      <meta property="og:type" content="website" />
+      <meta
+        name="og:escription"
+        content={description || "Khong Minh Quan's personal resume"}
+      />
     </Helmet>
   )
 }
