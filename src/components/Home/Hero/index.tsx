@@ -18,7 +18,7 @@ const Hero: FC = () => {
           <h1 className="text-4xl lg:text-6xl text-blue-500 font-extrabold">
             Khong Minh Quan
           </h1>
-          <p className="text-orange-200 text-lg">
+          <p className="text-orange-200 text-lg text-center">
             Yesterday is history. Tomorrow is a mystery.
           </p>
         </div>

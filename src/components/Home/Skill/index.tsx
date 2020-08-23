@@ -28,68 +28,68 @@ const Skill: FC = () => {
         </div>
         <div className="grid grid-cols-3 lg:grid-cols-8 gap-4 mt-4 p-4">
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgLaravel className="w-24 h-24"></SvgLaravel>
+            <SvgLaravel className="lg:w-24 lg:h-24"></SvgLaravel>
             <p className="mt-2">Laravel</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgNodejs className="w-24 h-24"></SvgNodejs>
+            <SvgNodejs className="lg:w-24 lg:h-24"></SvgNodejs>
             <p className="mt-2">NodeJs</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgJavascript className="w-24 h-24"></SvgJavascript>
+            <SvgJavascript className="lg:w-24 lg:h-24"></SvgJavascript>
             <p className="mt-2">Javascript</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgTypescript className="w-24 h-24"></SvgTypescript>
+            <SvgTypescript className="lg:w-24 lg:h-24"></SvgTypescript>
             <p className="mt-2">Typescript</p>
           </div>
 
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgReact className="w-24 h-24"> </SvgReact>
+            <SvgReact className="lg:w-24 lg:h-24"> </SvgReact>
             <p className="mt-2">React</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgVue className="w-24 h-24"></SvgVue>
+            <SvgVue className="lg:w-24 lg:h-24"></SvgVue>
             <p className="mt-2">Vue</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgHtml className="w-24 h-24"></SvgHtml>
+            <SvgHtml className="lg:w-24 lg:h-24"></SvgHtml>
             <p className="mt-2">HTML</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgCss className="w-24 h-24"></SvgCss>
+            <SvgCss className="lg:w-24 lg:h-24"></SvgCss>
             <p className="mt-2">CSS</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgBoostrap className="w-24 h-24"></SvgBoostrap>
+            <SvgBoostrap className="lg:w-24 lg:h-24"></SvgBoostrap>
             <p className="mt-2">Boostrap</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgJquery className="w-24 h-24"></SvgJquery>
+            <SvgJquery className="lg:w-24 lg:h-24"></SvgJquery>
             <p className="mt-2">Jquery</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgNextJs className="w-24 h-24"> </SvgNextJs>
+            <SvgNextJs className="lg:w-24 lg:h-24"> </SvgNextJs>
             <p className="mt-2">NextJs</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgRedux className="w-24 h-24"></SvgRedux>
+            <SvgRedux className="lg:w-24 lg:h-24"></SvgRedux>
             <p className="mt-2">Redux</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgReduxSaga className="w-24 h-24"></SvgReduxSaga>
+            <SvgReduxSaga className="lg:w-24 lg:h-24"></SvgReduxSaga>
             <p className="mt-2">Redux Saga</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgNuxtJs className="w-24 h-24"></SvgNuxtJs>
+            <SvgNuxtJs className="lg:w-24 lg:h-24"></SvgNuxtJs>
             <p className="mt-2">NuxtJs</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgDocker className="w-24 h-24"></SvgDocker>
+            <SvgDocker className="lg:w-24 lg:h-24"></SvgDocker>
             <p className="mt-2">Docker</p>
           </div>
           <div className="card flex flex-col items-center justify-center p-2">
-            <SvgMysql className="w-24 h-24"></SvgMysql>
+            <SvgMysql className="lg:w-24 lg:h-24"></SvgMysql>
             <p className="mt-2">MySql</p>
           </div>
         </div>
