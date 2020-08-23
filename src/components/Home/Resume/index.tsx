@@ -15,7 +15,7 @@ const Resume: FC = () => {
       <div className="container mx-auto py-32 px-4 sm:px-0">
         <div className="section-title">
           <h3 className="text-blue-500 ">Experience & Education</h3>
-          <h2>My resume</h2>
+          <h2>My Experience</h2>
         </div>
         <ul className="timeline timeline-centered mt-4">
           <li

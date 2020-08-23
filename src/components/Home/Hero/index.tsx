@@ -19,7 +19,7 @@ const Hero: FC = () => {
             Khong Minh Quan
           </h1>
           <p className="text-orange-200 text-lg">
-            A Learner & Full Stack Developer
+            Yesterday is history. Tomorrow is a mystery.
           </p>
         </div>
       </div>

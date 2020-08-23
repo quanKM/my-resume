@@ -29,13 +29,13 @@ const AboutMe = () => {
           <div className="mt-4 p-4 md:w-1/2 w-full">
             <div className="flex ">
               <p className="font-open font-bold text-2xl md:text-4xl">
-                KHONG MINH QUAN
+                {/* KHONG MINH QUAN */}
               </p>
             </div>
             <div className="flex mt-1">
               <SvgBackend width="1.5rem" height="1.5rem" className="mt-1" />
               <p className="font-open ml-2 font-bold text-xl md:text-2xl">
-                FULL STACK WEB DEVELOPER
+                FULL STACK DEVELOPER
               </p>
             </div>
             <div className="flex mt-1">
@@ -44,7 +44,7 @@ const AboutMe = () => {
                 HANOI, VIETNAM
               </p>
             </div>
-            <div className="flex mt-1">
+            {/* <div className="flex mt-1">
               <SvgCupcake width="1.5rem" height="1.5rem" />
               <p className="font-open ml-2 text-base md:text-xl">Been on</p>
               <SvgWorld
@@ -56,7 +56,7 @@ const AboutMe = () => {
                 {' '}
                 {myYearOld} years
               </p>
-            </div>
+            </div> */}
             <div className="flex mt-1">
               <SvgQuote width="1.5rem" height="1.5rem" />
               <p className="font-open text-base md:text-xl ml-2">

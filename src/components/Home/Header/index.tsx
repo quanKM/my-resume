@@ -91,7 +91,7 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   to="resume"
                   className=" text-lg font-semibold mr-6 cursor-pointer"
                 >
-                  Resume
+                  Experience
                 </Link>
                 <ChangeThemeButton
                   theme={theme}
@@ -128,10 +128,10 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
             <div
               className={
                 (showMobileHeader ? 'block' : 'hidden') +
-                ' sm:hidden border-t-2 bg-primary z-20'
+                ' sm:hidden border-t-2 bg-primary z-20 mobile__sidebar'
               }
             >
-              <div className="flex flex-col px-4">
+              <div className=" flex flex-col px-4">
                 <Link
                   activeClass="active"
                   spy={true}
