@@ -7,6 +7,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
   margin: 0;
   padding: 0;
   width: 100%;
+
   h1,
   h2,
   h3,
@@ -16,6 +17,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     line-height: inherit;
   }
 }
+
 .timeline-info {
   font-size: 12px;
   font-weight: 700;
@@ -28,16 +30,19 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 .timeline-item {
   padding-left: 40px;
   position: relative;
+
   &:last-child {
     padding-bottom: 0;
   }
 }
+
 .timeline-marker {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   width: 15px;
+
   &:before {
     background: $primary-color;
     border: 3px solid transparent;
@@ -47,10 +52,11 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     height: 13px;
     position: absolute;
     top: 4px;
-    left: -1px;
+    left: 1px;
     width: 13px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   }
+
   &:after {
     content: '';
     width: 3px;
@@ -61,10 +67,12 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     bottom: 0;
     left: 6px;
   }
+
   .timeline-item:last-child &:after {
     content: none;
   }
 }
+
 .timeline-item:not(.period):hover .timeline-marker:before {
   background: transparent;
   border: 3px solid $primary-color;
@@ -72,9 +80,11 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
 .period {
   padding: 0;
+
   .timeline-info {
     display: none;
   }
+
   .timeline-marker {
     &:before {
       background: transparent;
@@ -89,15 +99,18 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
       border-top: 3px solid #ccd5db;
       border-bottom: 3px solid #ccd5db;
     }
+
     &:after {
       content: '';
       height: 32px;
       top: auto;
     }
   }
+
   .timeline-content {
     padding: 40px 0 70px;
   }
+
   .timeline-title {
     margin: 0;
   }
