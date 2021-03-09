@@ -112,14 +112,14 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
             <div className="flex px-4 py-2">
               <div className="sm:hidden cursor-pointer mr-auto">
                 <a className="flex  items-center" onClick={scrollToTop}>
-                  <SvgAstronaut className="w-12 h-12"></SvgAstronaut>
+                  <SvgAstronaut className="w-12 h-12"/>
                   <span className="ml-2 font-semibold">QuanKM</span>
                 </a>
               </div>
               <div
                 className="sm:hidden cursor-pointer ml-auto"
                 onClick={() => {
-                  setShowMobileHeader(!showMobileHeader)
+                  setShowMobileHeader(s => !s)
                 }}
               >
                 <SvgToggle className="text-purple-600 w-12 h-12"></SvgToggle>
@@ -127,8 +127,8 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
             </div>
             <div
               className={
-                (showMobileHeader ? 'block' : 'hidden') +
-                ' sm:hidden border-t-2 bg-primary z-20 mobile__sidebar'
+                (showMobileHeader ? 'show border-t-2' : 'hide') +
+                ' bg-primary z-20 mobile__sidebar'
               }
             >
               <div className=" flex flex-col px-4">
@@ -138,6 +138,9 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   smooth={true}
                   duration={500}
                   to="hero"
+                  onClick={() => {
+                    setShowMobileHeader(false)
+                  }}
                   className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >
                   Home
@@ -148,6 +151,9 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   smooth={true}
                   to="about-me"
                   duration={500}
+                  onClick={() => {
+                    setShowMobileHeader(false)
+                  }}
                   className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >
                   About
@@ -157,6 +163,9 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                   smooth={true}
                   duration={500}
                   to="skill"
+                  onClick={() => {
+                    setShowMobileHeader(false)
+                  }}
                   className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >
                   Skills
@@ -164,6 +173,9 @@ const Header: FC<Props> = ({ theme, setTheme }) => {
                 <Link
                   spy={true}
                   smooth={true}
+                  onClick={() => {
+                    setShowMobileHeader(false)
+                  }}
                   to="resume"
                   className=" text-lg font-semibold mr-6 cursor-pointer border-b-2 py-2"
                 >

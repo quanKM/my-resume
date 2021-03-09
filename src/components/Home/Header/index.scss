@@ -8,4 +8,21 @@
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  &.show {
+    & > div {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.5s linear;
+    }
+
+    max-height: 256px;
+  }
+  &.hide {
+    & > div {
+      visibility: hidden;
+      opacity: 0;
+      // transition: visibility 0s 0.2s, opacity 0.2s linear;
+    }
+    max-height: 0;
+  }
 }
