@@ -41,10 +41,10 @@ const Resume: FC = () => {
                 + Work directly with customers.
               </p>
               <p>
-                + Project schedule Planning.
+                + Project schedule planning.
               </p>
                 <p>
-                + Assign tasks to the team member and review the code
+                + Assign tasks to the team members and review the code.
               </p>
             </div>
           </li>
