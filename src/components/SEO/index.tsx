@@ -1,5 +1,12 @@
 import React, { FC } from 'react'
 import { Helmet } from 'react-helmet'
+
+
+const StaticData = {
+  description: 'Khong Minh Quan\'s personal resume',
+}
+
+
 type Props = {
   description?: string
   meta?: any
@@ -9,18 +16,18 @@ type Props = {
 const SEO: FC<Props> = ({ description, meta, title }) => {
   return (
     <Helmet>
-      <meta charSet="utf-8" />
+      <meta charSet='utf-8' />
       <title>{title || 'Home'}</title>
-      <meta property="og:type" content="article" />
-      <html lang="en" />
+      <meta property='og:type' content='article' />
+      <html lang='en' />
       <meta
-        name="description"
-        content={description || "Khong Minh Quan's personal resume"}
+        name='description'
+        content={description || StaticData.description}
       />
-      <meta property="og:type" content="website" />
+      <meta property='og:type' content='website' />
       <meta
-        name="og:escription"
-        content={description || "Khong Minh Quan's personal resume"}
+        name='og:escription'
+        content={description || StaticData.description}
       />
     </Helmet>
   )
