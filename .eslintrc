@@ -16,7 +16,6 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint",
     "prettier",
     "jsx-a11y",
     "import"
