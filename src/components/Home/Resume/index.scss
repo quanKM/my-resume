@@ -52,7 +52,7 @@ $primary-color-hover: scale-color($primary-color, $lightness: 32%);
     height: 13px;
     position: absolute;
     top: 4px;
-    left: 1px;
+    left: -1px;
     width: 13px;
     transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
   }
